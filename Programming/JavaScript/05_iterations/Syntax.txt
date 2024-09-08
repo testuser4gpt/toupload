@@ -1,0 +1,12 @@
+while (expression) {
+    // statement
+}
+
+do {
+  statement;
+} while(expression);
+
+for (initializer; condition; iterator) { 
+    // note that let is used with initializer
+    // statements
+}

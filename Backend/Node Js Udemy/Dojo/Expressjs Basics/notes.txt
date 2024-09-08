@@ -1,0 +1,23 @@
+jsend JSON DATA (jsend Json formatting)
+
+
+when sending post data as json. No need to add id parameter, it will be added automatically
+
+middleware is just a step which sits between the req and res, It modifies the req,res data
+
+# Middlewares
+we can see that the middlewares being executed only when we calls them using browser. since they sit on between
+req, res 
+
+# we can add scripts in package.json
+under scripts :
+"scriptTriggerName" : script
+
+ex : 
+"start" : npx nodemon server.js
+
+now just use npm start
+// the script will trigger
+
+# I dont understand this router.params
+# Node env are also left

@@ -1,0 +1,111 @@
+# Mongodb
+
+# To show the databases 
+>show dbs
+Note that show dbs will only show the databases which has atleast one collection and one document in it
+
+#can cancel the connection by going to services > "search mo" and stop MongoDb server
+
+
+# To create a database
+>use DatabaseName
+MongoDB use DATABASE_NAME is used to create database. 
+The command will create a new database if it doesn't exist, otherwise it will return the existing database.
+
+# To check the currently selected database 
+>db
+
+# To drop the database
+>db.dropDatabase()
+
+# Create collection
+>db.createCollection(name, options)
+
+// Option parameters
+https://www.tutorialspoint.com/mongodb/mongodb_create_collection.htm#:~:text=size%20and%20indexing-,Options%20parameter,-is%20optional%2C%20so
+
+// Create collection without options parameter
+>db.createCollection("myfirstcollection")
+
+// Create collection with options parameter
+>db.createCollection("mycollection",{ capped : true, autoIndexID : true, size : 6142800, max : 10000 })
+
+// show collections
+>show collections 
+
+# To deletecollections
+>db.collection_name.drop()
+// To drop the database with space in it
+>db["Database Name"].db()
+
+# Datatypes :
+https://www.tutorialspoint.com/mongodb/mongodb_datatype.htm#:~:text=MongoDB%20supports%20many%20datatypes.%20Some%20of%20them%20are%20%E2%88%92
+
+
+# Inerting data into documents using insert() and save()
+>db.COLLECTION_NAME.insert(document)
+
+> db.collection_name.insert({
+... _id : ObjectId("507f191e810c19729de860ea"),
+... title: "MongoDB Overview",
+... description: "MongoDB is no sql database",
+... by: "tutorials point",
+... url: "http://www.tutorialspoint.com",
+... tags: ['mongodb', 'database', 'NoSQL'],
+... likes: 100
+... })
+
+// by this syntax we can create collection and insert document directly
+// db.collection_name.insert({}) // if collection_name doesnt exist then mongodb will add it automatically
+
+//In the inserted document, if we don't specify the _id parameter, then MongoDB assigns a unique 
+ObjectId for this document
+
+// _id is 12 bytes hexadecimal number unique for every document in a collection 12 bytes are divided as follows −
+_id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id, 3 bytes incrementer)
+
+// we can pass the array as well inside insert()
+
+# To insert only one document
+db.collection_name.insertOne({Document})
+
+# To insert many documents we can use
+> db.collection_name.insertMany([{obj1},{obj2}]) // similar thing can be done by .insert()
+> db.collection_name.insert([])
+
+# To query a Document
+> db.collection_name.find() // displays all document object inside a collection
+> db.collection_name.find().pretty() // Makes it pretty
+
+# To query a First Object of a Document
+> db.collection_name.findOne() // Displays the first object of document
+
+# RDBMS Where Clause Equivalents in MongoDB, queryconditions : 
+https://www.tutorialspoint.com/mongodb/mongodb_query_document.htm#:~:text=RDBMS%20Where%20Clause%20Equivalents%20in%20MongoDB
+
+# Update and Save 
+// Update modifies the existing document ,whereas 
+// save replaces the existing document
+
+# Using Update
+> db.collection_name.update({"key":"value selector"},{$set:{"key":"new_value"}})
+// note that by using different name for key in $set creates a new entry(key-value pair) in that object
+
+// By default, MongoDB will update only a single first matched document. To update multiple documents, 
+you need to set a parameter 'multi' to true.
+
+>db.mycol.update({'title':'MongoDB Overview'},{$set:{'title':'New MongoDB Tutorial'}},{multi:true})
+
+// Note if {multi : true} is not mentioned then it will only queries and updates the first match
+
+> db.collection_name.updateOne() // updates only one object
+> db.collection_name.updateMany()
+
+# Removing Documents 
+>db.COLLECTION_NAME.remove(DELLETION_CRITTERIA)
+
+// to remove only one 
+>db.COLLECTION_NAME.remove(DELETION_CRITERIA,1)
+
+// To remove everything
+> db.mycol.remove({})

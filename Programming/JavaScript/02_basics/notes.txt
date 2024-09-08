@@ -1,0 +1,5 @@
+# Practice more with array, It's clear yet btw, Let's explore more
+
+# Know more about this keyword  : https://chatgpt.com/c/51895a5a-d409-485f-aba0-1eca58382aa1#:~:text=Certainly!%20The%20this%20keyword%20in%20JavaScript%20is%20a%20powerful%20and%20sometimes%20confusing%20feature.%20Its%20value%20depends%20on%20the%20context%20in%20which%20a%20function%20or%20method%20is%20called.%20Here%E2%80%99s%20a%20detailed%20explanation%20of%20how%20this%20works%20in%20various%20contexts%3A
+
+# know more about Objects

@@ -1,0 +1,28 @@
+# To check the version of django
+python -m django --version
+django-admin --version
+
+# To check all django commands
+django-admin help --commands
+dhango-admin 
+
+#Note that python manage.py is used instead of django-admin during project development, serves same purpose
+
+#Start Project 
+django-admin startproject 
+
+# Run project 
+python manage.py runserver
+python manage.py runserver PORTNUMBER
+
+# Create app
+ python manage.py startapp AppName
+
+# Migrate and Makemigrations
+
+python manage.py makemigrations # make migrations , staging area
+python manage.py migrate # migrates the data
+
+# Create Superuser :
+python manage.py createsuperuser
+ 

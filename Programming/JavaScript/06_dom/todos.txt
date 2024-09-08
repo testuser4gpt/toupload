@@ -1,0 +1,3 @@
+Need more practice on dom
+
+ css selecters are left

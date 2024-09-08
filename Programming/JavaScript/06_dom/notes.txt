@@ -1,0 +1,96 @@
+Element selectors : document.getElementByClassName('') , document.getElementByID(''), document.querySelector('')
+
+document.getElementByID("id1") = returns the selected html doc 
+
+document.getElementByID("id1").className/id/etc = returns class name
+
+document.getElementByID("id1").getAttribute('id/class/etc')
+
+document.getElementByID("id1").setAttribute('attribute_name, attribute_value')
+// Note that it always overwrites
+
+title = document.getElementByID("id1")
+
+// Note that we can apply any style using 
+title.style.AnyStyleAttribute = "style value"
+
+
+title.textContent = Returns the text content inside the selected tag
+
+// There are three selector to get text content : textContent, innerHtml, innerText 
+// Note that innerText will not show the text of content which is set to style = "display : none"
+// and textContent will show the complete content
+// innerHtml will show the innter html as well ("if in case tags like span or other is used inside the text content, it will appear as well)
+
+
+document.querySelector('#id_name/.ClassName/otherCssSelector') = returns html
+
+// Note that querySelector selects the first Element in dom
+
+// Changing the inner text :
+var = document.querySelector('element')
+var.innerText = "my new text is here"
+
+
+// document.querySelectorAll('')
+// selects all the item
+
+// Note that : when using querySelectorAll it returns a node list, so whenever using it always we have to 
+use index
+
+ex : 
+
+element = document.querySelectorAll('h1')
+
+// node list of all elements will drop here with prototype(describes which methods we can use here)
+
+now :
+
+element[0] = returns the first html object
+element[0].innerText = returns the first html object's text 
+element[0].style.backgroundColor = green (turns the value green)
+
+
+// To iterate the hmtlcollection
+
+varr = document.querySelectorAll("element")
+
+varr.forEach(function(l){
+    l.style.backgroundColor = "blue"    // it will turn list items into blue
+})
+
+
+
+// To convert nodelist or hmtlcollection to array :
+
+Array.from(element) = converts into Array
+
+
+
+using for each for nodelist/hmtlcollection
+
+element.forEach(function("element to get passed // let's h3 is passed then we use h to get h3"){
+    h.style.backgroundColor = "black";
+    h.style.color = "Lime"
+})
+
+
+
+
+
+# using children    
+
+ele = document.querySelector(".ClassName")
+ele.children -> returns hmtlcollection
+therefore,
+ele.children[0] //indexing would work -> returns the oth object, (so you can use ele.children[0].innerHtml for it's value)
+
+
+
+# selecting parent and sibling
+
+ele = document.querySelector(".childClass")
+ele.parentElement -> returns the parent element
+ele.nextElementSibling -> returns next element sibiling of the class
+
+

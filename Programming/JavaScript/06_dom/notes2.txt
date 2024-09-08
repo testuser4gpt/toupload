@@ -1,0 +1,11 @@
+# Creating element
+
+ele = document.createElement("html element name")
+#setting up the attributes of element we just created
+ele.className = "anyclassname"
+ele.id = "anyIdname"
+
+#giving any attribute
+ele.setAttribute("attribute_name", "attribute_value")
+
+ele.appendChild("anything you create")

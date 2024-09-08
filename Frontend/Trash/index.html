@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="new_root"></div>
+
+    <script>
+      const heading_one = document.createElement("h1");
+      heading_one.innerHTML = "Hello world";
+
+      const root_select = document.getElementById("root");
+      root_select.appendChild(heading_one);
+
+      const heading_two = document.createElement("h2");
+      heading_two.innerHTML = "Hum pe to haiee noo 😝";
+
+      const root2 = document.getElementById("new_root");
+      root2.appendChild(heading_two);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,388 @@
+<!Doctype html>
+<!--html is a markup language 
+        h=hyper(over)
+        t=text(text)
+        m= markup(set of tags which converts given text accordingly to command of text by client)
+        L=language -->
+        
+<html lang="en-US" >
+<!-- *NOTE* lang attribute helps seo to decide the language of page here are some :-
+ lang="en"
+ lang="en-US"
+ lang ="hn" -->
+    <head>
+    
+        <title>This is our html</title>
+    </head>
+    <body bgcolor="" text="" background="" style="background-repeat:no repeat;" >
+    <!-- we can use (repeat x) to get image to x axis .... or if we use imge of 100x100 then it will fill full page-->
+    <!-- if image is in some folder then we will write background="_foldername/xyz.jpg" -->
+    
+    <!--*NOTE* 
+    bgcolor attribute defines the colour of background
+    text="" decides the color of text
+    background ="" Can add up images here -->
+    
+        
+        <a name="paragraph"></a>
+        <!------------------------------->
+        
+        <!-- PARAGRAPH SECTION-->
+        
+        <p> hi this is a new paragraph</p>
+        
+        <!--align attribute do not work for p tag in html 5-->
+        
+        <!-------------------------------->
+        
+        <!-- WHITESPACE SECTION -->
+        
+        <!--now we are talking about whitespaces ... whenever we put more than one spaces during code of html.. output will generate only one whitespace 
+        *CAUSE*
+        if it was not made like that it would make problem while code .. because during code we usually press enter to make code on an another line so,none of code output would wrapped as we want them therefore,to remove this ambiguide browser collapses the extra whitespaces-->
+        <!------------------------>
+        
+        <!-- we can make more spaces as much as we want by coding &nbsp-->
+        
+        <p>this&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp paragraph</p>
+        <!-- but this is a long way to code white space we can make do it easily by pre tag-->
+        
+        <pre><p>
+            hello.               
+                this.    is.      html.    
+        </p></pre>
+        <!--pre tag makes dots 
+        *cause*
+        WE DON'T KNOW NOW :( -->
+        
+        <!----------------------------->
+        
+        <!--LINE BREAK TAG -->
+        
+        <p>This is Line <br />break.</p>
+        <!--by this method we can get a line break-->
+        <!-------------------------------->
+        
+        <!-- TEXT FORMATTING SECTION-->
+        
+        <!-- we can format text styles accordingly we want -->
+        
+        <i>italic text</i><br />
+        <em>emphasized text</em><br />(they both are same)<br />
+        <b>Bold tag</b><br />
+        <strong>Strong tag</strong>
+        <br />(these two are also same)
+        <br />
+        <ins>inserted text</ins>
+       <br /> <u>underlined text</u>
+       <br />(same again )
+       <br />
+      <p><sub>2</sub>He<sup>1</sup></p>
+      <br />(these are superscripted and subscripted tags)
+    <br />  <del>Deleted text</del>
+    <br /> <big>Hola</big><small>bola</small>
+        <br />(this is small and big tags)
+       <br /> <mark style="background-color:lime;">Mark tag</mark>
+       <br /><q><B>SOMETIMES WE GOTTA RUN BEFORE WE CAN WALK</B></q>
+       <br />(this is quote tag)
+       
+       <!-- *NOTE* i and b tag refers italic and bold text whereas, em and strong tag refers important text (em and strong tags are IMPORTANT PHRASE TAGS)-->
+       
+       <!--------------------------------->
+       
+       
+       <!--HEADING AND THEMATIC BREAK(HORIZONTAL LINE BREAK) SECTION -->
+       <a name="heading"></a>
+       <h1>Heading 1</h1>
+       <h2>Heading 2</h2>
+       <h3>heading 3</h3>
+       <h4>Heading 4</h4>
+       <h5>Heading 5</h5>
+       <h6>Heading 6</h6>
+       
+       <!-- There are 6 levels of headings From h1 to h6 and we should'nt use them to make text look big and bold , these are only used for headings which helps out seo to understand content of page-->
+       
+       <!-- *NOTE* never use headings below h3 for best SEO 
+       and Use only h1 and h2 best for headings and h3 for subheadings for best SEO -->
+       
+       <hr width="50%"/> 
+       
+       <hr color="cyan" size="10"/>
+       <!--this is a horizontal line-->
+       
+      <!--align attribute do not work for hr tag in html5-->
+       
+       <!---------------------------------->
+       
+              <!--FONT SECTION-->
+          <font Size="13" face="" color="Red">This is a font tag</font>
+          
+          <!------------------------------->   
+       
+       <!----- IMAGE SECTION ---->
+       
+       <img src="http://www.sololearn.com/images/tree.jpg" height="300px" width ="300px" border="5px" alt="this picture is not supported in your browser"/>
+       
+       <!-- height and width attributes use to decide the size of an element and their units are % and px 
+       border attribute provides border to given element to tag and units are also px and %
+       alt attribute used to indicate a message if browser does'nt support that element -->
+       
+       <!---------------------------->
+       
+          <!--MARQUEE SECTION-->
+          
+       <marquee>let's Move</marquee> 
+       <marquee bgcolor="Cyan">Let's Move#2</marquee>  
+       
+    <marquee bgcolor="lime" behavior="Scroll">let's move#3</marquee>
+    <marquee bgcolor="skyblue" behavior="slide">Let's move#4</marquee>
+    <marquee behavior="Alternate" bgcolor="orange">Let's move#5</marquee>
+    <marquee bgcolor="pink" height="30px" behavior ="Alternate" direction="right">Let's move#6</marquee>
+    <marquee behavior ="scroll" direction="down" bgcolor="green" height="200px" scrolldelay="0.001s" >Let's move#7</marquee>
+    
+    <!--------------------------------->
+    
+           <!--LISTS SECTION -->
+           <a name="lists"></a>
+           
+           <ol>
+               <li>Item1</li>
+               <li>item2</li>
+               <li>item3</li>
+           </ol>
+           
+           <ol type="a">
+               <li>Item a</li>
+               <li>item b</li>
+               <li>item c</li>
+               
+           </ol>
+    <ol type ="i">
+        <li>item i</li>
+        <li> item ii</li>
+        <li>item iii</li>
+    </ol>
+    <ol type="A" start ="4">
+    <li>itemD</li>
+    <li>itemE</li>
+    <li>itemF</li>
+    <li>itemG</li>
+        
+    </ol>
+     <!----------------------------->
+     
+     <!--DEFINATION LISTS,TERM,DATAT-->
+     <dl>
+         <dt>Html:</dt>
+         <dd>Html stands for hyper test markup language</dd>
+         <dt>Markup:</dt>
+         <dd>markup is a set of tags which converts text accordingly we want</dd>
+     </dl>
+     
+     <!--dl =defination list
+     dt = defination term
+     dd =defination data -->
+     
+     <!-------------------------------->
+     
+     <!------LINKS I.E ANCHOR-->
+     <a href ="https://www.fb.com">Facebook</a>
+    <br/> <a href ="https://www.fb.com" target="_blank">Fb in new page</a>
+    <br/> <a href="https://www.fb.com" target="_self">fb in same page</a>
+    
+    <pre>
+    
+    
+    <br /><a href="#paragraph">Go to paragraph section</a>
+    
+       <br/> <a href ="#heading">Go to heading </a>
+       <br /><a href="#lists">Lists section</a>
+    </pre>
+    <!--# value navigates href destination to same page without loading new one-->
+     <!--Href ="hyperlink reference"
+     blank attribute opens page in new tab
+     self attribute opens page in same tab-->
+     
+     <!--*NOTE* we can use images in b/w a tag (in place of text) -->
+     
+     <!-- to navigate link to another page to a certain section , follow these steps:-
+     Step 1 = place <a name="Bottom"></a>
+     Step 2 = place <a href="link#bottom">Go to link,Bottom section</a>
+    
+     <!--------------------------->
+     
+     <!--Embed tag with image,Video,audio-->
+     
+     <embed type = "image/jpg" src="Img">Image</embed>
+     <embed type = "video/webm" src="video" autoplay="false">Video</embed>
+     <embed type = "audio/mp3" src="audio" autoplay="false">Audio</embed>
+     <!------------------------------>
+     
+     <!--Anchor with different types of files-->
+     
+     <a href="Video.mp4" target="" title="Click me"></a>
+     <a href="audio.mp3"></a>
+     <a href="img.jpg"></a>
+     <a href="file.pdf"></a>
+     <a href="file.zip"></a>
+     
+     <!------------------------------->
+     
+            <!--MAILTO-->
+            <p>
+                This is another mailto link:
+                <a href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!" target="_top">Send mail!</a>
+                </p>
+                
+                <p>The link will only work if you have email installed.</p>
+                
+                <p>(Spaces between words should be replaced by %20 to ensure that the browser will display the text properly)</p>
+            
+            <!------------------>
+            
+            <!--FORM-->
+         <br /> <form name ="frmDataEntry" action="Url.com" method="get">
+         <!--method attribute have two values:-
+         #1 get = took information to the browser homepage link
+         #2 Post =took information to the server to make it more secure ,so it's used for passwords and sensitive informations-->
+              <br /><input type="text" name="txtUserName" id="txtUserName" value="" placeholder="Insert your name here" maxlength="12" required></input>
+            <br/> 
+            <br/> <input type="text" name="txtUserName" value="" placeholder="Disabled text" maxlength="10" disabled/>
+            <br/>
+           <br/> <input type="password" name="pwdConfirm" id="pwdConfirm" placeholder="Password" value="" required/>
+           
+           <br/>
+           <input type="radio" value="male" name="rdbGender" id="rdbGender" Checked/>Male
+         <br />
+           <input type="radio" value="female" name="rdbGender" id="rdbGender"/>Female
+           <!-- Note that for radio button single selection in options use the name to let identify that they belong to same
+            Or it won't work-->
+           
+            <br/>
+           <input type="Checkbox" name="cbxGender" id="cbxGender" value="1"/>Male
+          <br/> <input type="checkbox" name="cbxGender" id="cbxGender" value="2"/>Female
+          <!--name and id will work as name for backend work i.e java script-->
+           <br/>
+           <br />Qualification:-<select name="slctQualification">
+               <option value="P">PG</option>
+               <option value="U">UG</option>
+               <option value="i">intern</option>
+           </select> 
+           <!-- value will work in backend-->
+             <br/>
+             textarea:
+             <textarea rows="10" cols="10" wrap="Virtual"></textarea>
+             <!-- we have three attributes for word wrap ="Virtual" = appears in line breaks in front end .. but will send as a single line in back send
+             "Physical" =appears as line beeak in both frontend and backend
+             
+            "off"= will appear as single line in both front end and back end -->
+            <input type="submit" value="SUBMIT"/>
+            <input type="reset" value="RESET"/>
+            <input type="image" src="xyz.jpg" border="5px"/>
+            <input type="button" value="BUTTON"/>
+            <!--*NOTE* button use for javascript 
+      so we will learn about it later-->
+      <br />
+     <br /><label>Tel.Number</label> <input type="tel" name="telNumber" id="telNumber" placeholder="737392728" />
+      </form>
+      <br />
+      <br /><label>Email</label><input type="email" placeholder="email@example.com" name="email" id="email" autofocus required/>
+      <br />
+      <br /><input type="date" name="dte" id="dte"/>
+      
+          <!-------------------------->
+          
+            <!--TABLE SECTION-->
+           <br /> 
+           <br /><caption><strong>Table</strong></caption><table border="5px" bordercolor="cyan" bgcolor="pink"
+           cellspacing="50px"
+           cellpadding="30px"
+           width="30px"
+           height="30px">
+           <tr>
+               <th>items@</th>
+               <th>items₹</th>
+               <th>items$</th>
+           </tr>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td> item 3</td>
+                </tr>
+                <tr>
+                    <td>Item4</td>
+                    <td>Item5</td>
+                    <td>Item6</td>
+                </tr>
+            </table >
+            <br/>
+            <br/>
+            <Table border="5px"
+            cellspacing="10px"
+            cellpadding="5px"
+            height ="300px"
+            width="300px">
+                <tr>
+                    <td>1</td>
+                    <td valign="top">2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>
+                        5
+                    </td>
+                    <td align="right">6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td valign="Top">10</td>
+                    <td valign="Bottom">11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        13
+                    </td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+            </Table>
+            <br/>
+            <br /><table border="3px" height="300px" width="300px">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">4</td>
+                    <td rowspan="2">6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    
+                </tr>
+            </table>
+            <!--------------------->
+            <!---Audio and VIDEO---->
+            <audio controls loop>
+                <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
+                <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/ogg">
+                This audio file does'nt support in your browser
+            </audio>
+            <p><b><font color="red">Life was beautiful until apple fall on newton's head</font></b></p>
+            <video controls autoplay loop>
+                <source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4">
+                <source src="http://www.sololearn.com/uploads/video.mp4" type="video/ogg">
+                this video file is not supported in your browser
+            </video>
+            <!-------------------------->
+            <!---PROGRESS BAR-->
+            <progress min="10" max="100"></progress>
+    </body>
+</html>

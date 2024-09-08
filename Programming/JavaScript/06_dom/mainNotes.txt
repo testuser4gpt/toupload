@@ -1,0 +1,18 @@
+window : The window object in JavaScript is a global object that represents the window or tab in which
+ your script is running. It serves as the global execution context (or global object) for all JavaScript code
+ running in the browser.All global variables, functions, and objects are properties of the window object.
+
+# Window object : Just type window in console it will display all global variables, functions, 
+and objects are properties of the window object
+
+
+console.log(document) : contains the whole document of the page (HTML)
+
+// Note that originally it's console.log(window.document)  but devs know we'll use it often then
+they made it as : console.log(document)
+
+// Some properties
+
+console.log(document.links) : will display all the links 
+console.log(document.baseURI) : will display the url of the page 
+

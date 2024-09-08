@@ -1,0 +1,32 @@
+open cmd and type node : It will start REPL (Read Eval Print Loop)
+
+
+_ is the special variable which stores the value of previous expression
+
+require("module_name")
+
+
+we have understood how to input data using console : need to know more in this
+
+we have understood how to read and write file synchronously : need to know more into this ( i Saw a issue of overwriting)
+
+npm init
+npm install package_name
+also
+npm install package_name@version
+
+npm install --save-dev nodemon (installed as dev dependency)
+
+all packages are installed locally, so for global install we need to do :
+npm install -g PackageName
+also we can use i in place of install
+npm i -g PackageName
+
+to check npm package version 
+npm list PackageName
+// npm list express
+
+to run packages which are installed locally you gotta use 
+npx nodemon filename
+
+event loops left 

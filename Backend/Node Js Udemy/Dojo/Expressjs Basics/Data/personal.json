@@ -1,0 +1,38 @@
+[
+  {
+    "accId": 1,
+    "FullName": "Kapil Dieolia",
+    "Age": 22,
+    "accNo": 3445533223
+  },
+  {
+    "accId": 2,
+    "FullName": "Sumit Dieolia",
+    "Age": 19,
+    "accNo": 3433223
+  },
+  {
+    "accId": 3,
+    "FullName": "Deepu Dieolia",
+    "Age": 35,
+    "accNo": 453445533223
+  },
+  {
+    "accId": 4,
+    "FullName": "Kiran Dieolia",
+    "Age": 29,
+    "accNo": 665533223
+  },
+  {
+    "accId": 5,
+    "FullName": "Nitin Dieolia",
+    "Age": 32,
+    "accNo": 895533223
+  },
+  {
+    "accId": 6,
+    "FullName": "Kishan Dieolia",
+    "Age": 38,
+    "accNo": 9884857374
+  }
+]

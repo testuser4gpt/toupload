@@ -1,0 +1,9 @@
+# We can use new keyword on the console to check the given prototype (for checking available functions and 
+methods)
+# Use Number on console to check methods available for Number DataType, similarly for other Datatypes
+// pls check more on this later
+// explore more on the objects on vscode or console
+
+#We can use Math. too on console
+
+#Know more about datetime (need to practice on it, IMPORTANT)

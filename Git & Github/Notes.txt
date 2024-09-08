@@ -1,0 +1,62 @@
+Setting up your Git username and email with the commands:
+
+    git config --global user.name "Your Name"
+    git config --global user.email "your.email@example.com"
+    Editing the configuration file directly using git config --global --edit.
+
+
+How to untrack a file in github
+git reset FileName
+
+
+
+
+Staging and Committing Changes :
+
+    Adding files to the staging area with    "git add <file>" OR " git add . " (tracks all files)
+    Committing changes with  (git commit -m "commit message")
+    Viewing commit history with     "git log".
+     
+
+    Note that : The HEAD (MASTER) is a pointer which changes to latest commit
+
+
+To get back to certain past before changes :
+    
+    git log to copy the hashcode 
+    git checkout <Hashcode>
+    git checkout master (To get back to latest edit)
+    git branch (To check which branch we are at Or The number of branches in repo)
+
+
+Checkout, Branches, Merge
+
+    To make a branch "git branch <branch name>"
+    To switch to certain branch "git checkout <branch>"
+    Creating branches and switching to them in one command with "git checkout -b <branch_name>"
+    Merging branches using "git merge <branch>" (Note you have to go to parent branch to make changes)
+    git branch --delete <branchname>
+    git push origin --delete homepage/category
+    git push --set-upstream origin modelsetup
+
+
+
+    Note that the new branch we make over some certain branch copies everything
+
+
+Git hub :
+    git remote add origin <repo url>
+    after pushing our repo to github we use remote -v to see remote urls
+    git push -u origin 
+
+    Note that we will need to push every branch we made. so check out to branch then git push -u origin <branch name>
+
+
+
+
+Life cycle for open sourche contribution
+
+    Step 1 : Fork the project in github
+    Step 2 : Git clone in local system - git clone <https url for cloning>
+    Step 3 : make changes, add, commit and push
+    Step 4 : now make a pull request from forked repo page 
